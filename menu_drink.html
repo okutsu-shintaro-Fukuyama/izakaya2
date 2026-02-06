@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>おすすめ居酒屋</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+
+            <div class="logo">
+                <img src="img/ロゴ.jpg" alt="ロゴ">
+            </div>
+
+            <nav class="nav">
+
+                <a href="index.html">TOP</a>
+
+                <!-- ▼ メニュー -->
+                <div class="dropdown" id="menuDropdown">
+                    <button class="dropbtn">メニュー</button>
+
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <!-- JSで入れる -->
+                    </div>
+                </div>
+
+                <a href="access.html">アクセス</a>
+                <a href="about.html">こだわり</a>
+                <a href="#">お知らせ</a>
+                <a href="#">インフォ</a>
+
+            </nav>
+
+        </div>
+    </header>
+    <br>
+    <!--
+    <div class="menu-title">
+        夜のメニュー
+    </div>
+
+    <div class="carousel">
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-oden">
+                    <img src="img/おでん.jpg" alt="おでん">
+                </a>
+                <p class="caption">おでん 1,991円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-dashimaki">
+                    <img src="img/だし巻き卵.jpg" alt="だし巻き卵">
+                </a>
+                <p class="caption">だし巻き卵 605円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-saba">
+                    <img src="img/サバの煮つけ.jpg" alt="サバの煮つけ">
+                </a>
+                <p class="caption">サバの煮つけ 400円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-daikon">
+                    <img src="img/大根.jpg" alt="大根">
+                </a>
+                <p class="caption">大根</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-onigiri">
+                    <img src="img/肉みそおにぎり.jpg" alt="肉みそおにぎり">
+                </a>
+                <p class="caption">肉みそおにぎり ２ヶ880円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-tempura">
+                    <img src="img/天ぷら.jpg" alt="天ぷら">
+                </a>
+                <p class="caption">天ぷら 900円</p>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+
+    <h2>お飲み物のメニュー</h2>
+    <div class="menu-wrapper">
+
+        <div class="menu-column">
+            <section class="menu-box">
+                <h3>生ビール</h3>
+                <ul>
+                    <li><span>キリン一番搾り</span><span>649円</span></li>
+                    <li><span>ちょびっとビール</span><span>440円</span></li>
+                </ul>
+            </section>
+
+            <section class="menu-box">
+                <h3>焼酎</h3>
+                <ul>
+                    <li><span>黒霧島（芋）</span><span>528円</span></li>
+                    <li><span>二階堂（麦）</span><span>528円</span></li>
+                    <li><span>れんと（黒糖）</span><span>572円</span></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="menu-column">
+            <section class="menu-box">
+                <h3>瓶ビール</h3>
+                <ul>
+                    <li><span>キリンラガー（中）</span><span>690円</span></li>
+                    <li><span>アサヒドライ（中）</span><span>690円</span></li>
+                </ul>
+            </section>
+
+            <section class="menu-box">
+                <h3>キープ焼酎</h3>
+                <ul>
+                    <li><span>二階堂（麦）900ml</span><span>3,300円</span></li>
+                    <li><span>黒霧島（芋）900ml</span><span>3,300円</span></li>
+                </ul>
+                <p class="note">※保管期間は6か月とさせていただきます。</p>
+            </section>
+        </div>
+
+    </div>
+
+
+    <!-- ===== モーダル（拡大表示） ==== 
+
+    <div id="modal-oden" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/おでん.jpg" alt="おでん">
+        <p class="modal-caption">おでん</p>
+    </div>
+
+    <div id="modal-dashimaki" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/だし巻き卵.jpg" alt="だし巻き卵">
+        <p class="modal-caption">だし巻き卵</p>
+    </div>
+
+    <div id="modal-saba" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/サバの煮つけ.jpg" alt="サバの煮つけ">
+        <p class="modal-caption">サバの煮つけ</p>
+    </div>
+
+    <div id="modal-daikon" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/大根.jpg" alt="大根">
+        <p class="modal-caption">大根</p>
+    </div>
+
+    <div id="modal-onigiri" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/肉みそおにぎり.jpg" alt="肉みそおにぎり">
+        <p class="modal-caption">肉みそおにぎり</p>
+    </div>
+
+    <div id="modal-tempura" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/天ぷら.jpg" alt="天ぷら">
+        <p class="modal-caption">天ぷら</p>
+    </div>
+    -->
+
+    <script src="style.js"></script>
+</body>
+</html>
