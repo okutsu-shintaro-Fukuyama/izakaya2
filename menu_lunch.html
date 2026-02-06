@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>おすすめ居酒屋</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+
+            <div class="logo">
+                <img src="img/ロゴ.jpg" alt="ロゴ">
+            </div>
+
+            <nav class="nav">
+
+                <a href="index.html">TOP</a>
+
+                <!-- ▼ メニュー -->
+                <div class="dropdown" id="menuDropdown">
+                    <button class="dropbtn">メニュー</button>
+
+                    <div class="dropdown-content" id="dropdownMenu">
+                        <!-- JSで入れる -->
+                    </div>
+                </div>
+
+                <a href="access.html">アクセス</a>
+                <a href="about.html">こだわり</a>
+                <a href="#">お知らせ</a>
+                <a href="#">インフォ</a>
+
+            </nav>
+
+        </div>
+    </header>
+    <br>
+    <div class="menu-title">
+        昼のメニュー
+    </div>ー
+
+    <div class="carousel">
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-oden">
+                    <img src="img/昼１.jpg" alt="1">
+                </a>
+                <p class="caption">日替わり膳　1,100円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-dashimaki">
+                    <img src="img/昼2.jpg" alt="2">
+                </a>
+                <p class="caption">山ろく御膳(限定10食)　２，０００円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-saba">
+                    <img src="img/昼3.jpg" alt="3">
+                </a>
+                <p class="caption">黒毛和牛ステーキ膳（限定数）2,700円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-daikon">
+                    <img src="img/昼4.jpg" alt="4">
+                </a>
+                <p class="caption">天ぷら膳　３，１５０円</p>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="card">
+                <a href="#modal-onigiri">
+                    <img src="img/昼5.jpg" alt="5">
+                </a>
+                <p class="caption">刺身膳　３，１５０円</p>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- ===== モーダル（拡大表示） ===== -->
+
+    <div id="modal-oden" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/昼１.jpg" alt="1">
+        <p class="modal-caption">日替わり膳　1,100円</p>
+    </div>
+
+    <div id="modal-dashimaki" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/昼2.jpg" alt="2">
+        <p class="modal-caption">山ろく御膳(限定10食)　２，０００円</p>
+    </div>
+
+    <div id="modal-saba" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/昼3.jpg" alt="3">
+        <p class="modal-caption">黒毛和牛ステーキ膳（限定数）2,700円</p>
+    </div>
+
+    <div id="modal-daikon" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/昼4.jpg" alt="4">
+        <p class="modal-caption">天ぷら膳　３，１５０円</p>
+    </div>
+
+    <div id="modal-onigiri" class="modal">
+        <a href="#" class="close"></a>
+        <img src="img/昼5.jpg" alt="5">
+        <p class="modal-caption">刺身膳　３，１５０円</p>
+    </div>
+
+
+    <script src="style.js"></script>
+</body>
+</html>
